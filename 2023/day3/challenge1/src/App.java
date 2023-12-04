@@ -6,9 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class App {
     private Scanner sc;
@@ -16,7 +14,7 @@ public class App {
 
     public App(){
         try{
-            this.sc = new Scanner(new File("challenge1\\src\\input.txt"));
+            this.sc = new Scanner(new File("src/input.txt"));
             this.contentFile = new ArrayList<>();
         }catch(FileNotFoundException e){
             System.err.println(e.getMessage());
@@ -119,15 +117,10 @@ public class App {
 
     private int[] getAllIndex(List<String> numbers, String x){
         List<Integer> nIndex = new ArrayList<>();
+        int lastIndex = 0;
         for (String n : numbers) {
-            int lastIndex = 0;
-            int index = x.indexOf(n);
-            if(!nIndex.isEmpty()){
-                while(index != -1 && !nIndex.isEmpty() && index <= nIndex.get(nIndex.size() - 1)){
-                    index = x.indexOf(n, lastIndex);
-                    lastIndex = index;
-                 }
-            }
+            int index = x.indexOf(n, lastIndex);
+            lastIndex = index + 1;
             nIndex.add(index);
         }
 
