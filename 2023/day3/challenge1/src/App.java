@@ -120,12 +120,12 @@ public class App {
     private int[] getAllIndex(List<String> numbers, String x){
         List<Integer> nIndex = new ArrayList<>();
         for (String n : numbers) {
-            int cnt = 0;
+            int lastIndex = 0;
             int index = x.indexOf(n);
             if(!nIndex.isEmpty()){
-                while(index != -1 && !nIndex.isEmpty() && index < nIndex.get(nIndex.size() - 1)){
-                    cnt++;
-                    index = x.indexOf(n, cnt);
+                while(index != -1 && !nIndex.isEmpty() && index <= nIndex.get(nIndex.size() - 1)){
+                    index = x.indexOf(n, lastIndex+1);
+                    lastIndex = index;
                  }
             }
             nIndex.add(index);
