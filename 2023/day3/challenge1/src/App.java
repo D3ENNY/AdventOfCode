@@ -124,7 +124,7 @@ public class App {
             int index = x.indexOf(n);
             if(!nIndex.isEmpty()){
                 while(index != -1 && !nIndex.isEmpty() && index <= nIndex.get(nIndex.size() - 1)){
-                    index = x.indexOf(n, lastIndex+1);
+                    index = x.indexOf(n, lastIndex);
                     lastIndex = index;
                  }
             }
