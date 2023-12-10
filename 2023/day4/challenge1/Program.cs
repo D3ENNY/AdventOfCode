@@ -5,7 +5,7 @@ namespace challenge1
     internal partial class Program
     {
         [GeneratedRegex("\\d+")]
-        private static partial Regex numberRegex();
+        private static partial Regex NumberRegex();
         private List<List<int>[]> contentFile = new();
         public Program() => Challenge1();
 
@@ -47,7 +47,7 @@ namespace challenge1
         }
 
         private List<int> GetNumberList(string str) => 
-            numberRegex().Matches(str).Cast<Match>().Select(m => int.TryParse(m.Value, out int n) ? n : 0).ToList();
+            NumberRegex().Matches(str).Cast<Match>().Select(m => int.TryParse(m.Value, out int n) ? n : 0).ToList();
 
         static void Main(string[] args)
         {

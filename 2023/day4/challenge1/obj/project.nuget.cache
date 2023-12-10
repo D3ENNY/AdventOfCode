@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LPK/InCHpgiBz7Mt8Io5BOLIKnuL7JFrWwN3ksk/ipivtL27XVz4ZjNB5D4UhZp5lp80pSEzasJXhS4N2DBeIQ==",
+  "dgSpecHash": "qYL97dIdkFFNhVyFB8R6EE3x6Okbf7aeHYug0mV7oui6ajWZ3x20jW2iA0IVjdh8+gRURc1ltgJZyrJvv77xPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Documents\\adventofcode\\2023\\day4\\challenge1\\challenge1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/denny/Random/AdventOfCode/2023/day4/challenge1/challenge1.csproj",
+  "expectedPackageFiles": [
+    "/home/denny/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "/home/denny/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "/home/denny/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.14/microsoft.netcore.app.host.linux-x64.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
