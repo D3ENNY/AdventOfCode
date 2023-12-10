@@ -28,10 +28,11 @@ partial class Program
         foreach (int n in line[0])
             if (line[1].Contains(n))
                 cnt++;
-        if (cnt > -1)
 
-            for (int i = 0; i < cnt; i++)
-                ResolveScratchCard(index+i);
+        if (cnt > -1)
+            if(index <= contentFile.Count)
+                for (int i = 0; i < cnt; i++)
+                    ResolveScratchCard(index+i);
     }
 
 
